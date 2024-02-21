@@ -4,70 +4,295 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Self Introduction</title>
-    <style>
-        .title {
-            font-weight: bold;
-            font-size: larger;
-        }
-    </style>
+    <title>自我介绍 | hanxiangTAO</title>
+    <link rel="stylesheet" href="./assets/css/self_intro.css">
     <link rel="icon" href="./img/logo3.png">
 </head>
 
 <body>
-    <div class="title">Self Introduction</div>
-    <ul>
-        <li>👋 Hi, I'm @hanxiangTAO</li>
-        <li>👀 I'm interested in cars (Dream car: volvo v60 T8 polestar)</li>
-        <li>I'm good at playing the violin, and I'm a classic music lover.</li>
-        <li>🌱 I’m major in computer science</li>
-        <li>📫 How to reach me ...
-            <ul>
-                <li>qq: 1146717850</li>
-                <li>Wechat: Peter1146717850</li>
-                <li>CSDN: Peter1146717850</li>
-                <li>Leetcode: momo-5cd</li>
-            </ul>
-        </li>
-        <li>Education experience:
-            <ul>
-                <li>University: 中国海洋大学(Ocean University of China)</li>
-                <li>High school: 山东省青岛第五十八中学 (2018-2021)</li>
-                <li>Middle school: 山东省青岛第二十六中学 (2015-2018)</li>
-                <li>Primary school: 青岛市实验小学 (2009-2015)</li>
-            </ul>
-        </li>
-        <li>I was born in Qingdao, Shandong province, China. Qingdao is a beautiful coastal city, with its beautiful
-            scenery and pleasant climate.</li>
-        <li>What I have achieved: (introduced by Chinese, and they were gotten in OUC)
-            <ul>
-                <li>2021年军事训练“先进个人”</li>
-                <li>2021-2022年度校级一等奖学金</li>
-                <li>第十五届“永旺奖学金”</li>
-                <li>2021-2022年度校“优秀学生”</li>
-                <li>2022年“高教社杯”全国大学生数学建模竞赛 山东省二等奖</li>
-                <li>2023年MCM/ICM Honorable Mention</li>
-                <li>2023年“蓝桥杯”全国软件和信息技术专业人才大赛 C/C++组 山东省二等奖</li>
-                <li>2023年MathorCup高校数学建模挑战赛 国家级一等奖</li>
-            </ul>
-        </li>
-        <li>
-            My project:
-            <ul>
-                <li>Shopify App-Embed Block development (in my repository, but it's private now)</li>
-            </ul>
-        </li>
-        <li>Future goal:
-            <ul>
-                <li>Attending a TOEFL test?</li>
-                <li>Find a high-quality master project (maybe AI or Data Science)</li>
-                <li>Buy a house with a big open balcony😀</li>
-            </ul>
-        </li>
-    </ul>
-    <div>
-        <a href="./index.html">回到首页(Back to Main Page)</a>
+    <div class="mainarea" style="width: 100%; height: 100%">
+        <!-- sidebar -->
+        <div style="height: 100%; width: 18%; background-color: #97B1AB; position: fixed;">
+            <div
+                style="width: 80%; height: 24%; background-image: url(./img/self.jpg); background-size: cover; margin-left: 10%; margin-top: 10%; margin-bottom: 10%;">
+            </div>
+            <!--style需要补充hover的效果-->
+            <div class="navitem">
+                <a href="#jibenxinxi"
+                    style="width: 100%; height: 100%; align-items: center; justify-content: center; text-decoration: none; color: white; display: flex; font-size: x-large;">
+                    基本信息
+                </a>
+            </div>
+            <div class="navitem">
+                <a href="#suohuorongyu"
+                    style="width: 100%; height: 100%; align-items: center; justify-content: center; text-decoration: none; color: white; display: flex; font-size: x-large;">
+                    所获荣誉
+                </a>
+            </div>
+            <div class="navitem">
+                <a href="#xiangmujingli"
+                    style="width: 100%; height: 100%; align-items: center; justify-content: center; text-decoration: none; color: white; display: flex; font-size: x-large;">
+                    项目经历
+                </a>
+            </div>
+            <div class="navitem">
+                <a href="#lianxifangshi"
+                    style="width: 100%; height: 100%; align-items: center; justify-content: center; text-decoration: none; color: white; display: flex; font-size: x-large;">
+                    联系方式
+                </a>
+            </div>
+            <div class="backtoindex_btn">
+                <a href="./index.html"
+                    style="width: 100%; height: 100%; align-items: center; justify-content: center; text-decoration: none; color: white; display: flex; font-size: x-large;">
+                    返回导航页
+                </a>
+            </div>
+        </div>
+        <!-- mainbody -->
+        <div style="width: 82%; margin-left: 18%;">
+            <!-- 每一个块的标题栏-->
+            <div id="jibenxinxi"
+                style="height: 64px; width: 100%; background-color: #9ab1ab; display: flex; align-items: center; justify-content: center; font-size: x-large; font-weight: 600;">
+                基本信息
+            </div>
+            <div style="height: 500px; width: 100%; background-color: #C4FCF0;">
+                <div style="margin: 0 auto; height: 80%; width: 80%; padding-top: 40px; font-size: larger;">
+                    <p style="text-indent: 2em;">韩翔，2003年出生，本科就读于中国海洋大学计算机科学与技术专业。前5学期加权平均分86.7分，GPA: 3.52。英语四级604分，六级539分。</p>
+                    <p style="text-indent: 2em;">本页下方列出了本科期间所获荣誉、项目经历，以及个人的联系方式。</p>
+                    <p style="text-indent: 2em;">在本科期间，撰写多篇CSDN博客总结学科知识、专业技能、数模经验与方法等；借助力扣平台加深对编程和算法的理解；运用GitHub实现合作开发、个人主页搭建等。相关页面可以通过点击左侧导航栏中的“返回导航页”进一步访问。</p>
+                    <p style="text-indent: 2em;">学习之余，注重享受生活中的乐趣。让骑行带走生活中的烦恼，让小提琴带来美妙的旋律。2023年骑行139.8公里（不含日常通勤），在锻炼身体的同时放松身心。
+                        小提琴十级，曾多次取得山东省一等奖的成绩，担任过青岛五十八中“金钥匙”交响乐团首席（乐团曾获<a href="http://youth.qingdao.gov.cn/jcdt_88/sztw_88/202202/t20220209_4332702.shtml" target="_blank">国家一等奖</a>），通过河海大学2021年高水平艺术团测试（<a href="https://xxgk.hhu.edu.cn/2021/0402/c9450a224566/page.htm" target="_blank">结果公示</a>）。
+                        音乐与体育所带来的身心放松和坚韧不拔的意志，能够在未来的发展中不断推进个人的全方位发展。
+                    </p>
+                </div>
+            </div>
+            <div id="suohuorongyu"
+                style="height: 64px; width: 100%; background-color: #9ab1ab; display: flex; align-items: center; justify-content: center; font-size: x-large; font-weight: 600;">
+                所获荣誉
+            </div>
+            <div style="height: 500px; width: 100%; background-color: #f8f9fa;">
+                <div class="timeline1">
+                    <div class="container">
+                        <div class="item">
+                            <div id="timeline">
+                                <div>
+                                    <section class="year">
+                                        <h3>21.09</h3>
+                                        <section>
+                                            <ul>
+                                                <li>军训“先进个人”荣誉称号</li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="year">
+                                        <h3>22.04</h3>
+                                        <section>
+                                            <ul>
+                                                <li>中国海洋大学“团的活动积极分子”荣誉称号
+                                                </li>
+                                            </ul>
+
+                                        </section>
+                                    </section>
+                                    <section class="year">
+                                        <h3>22.09</h3>
+                                        <section>
+                                            <ul>
+                                                <li>2021-2022学年 校一等奖学金</li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="year">
+                                        <h3>22.11</h3>
+                                        <section>
+                                            <ul>
+                                                <li style="color: black;">全国大学生数学建模竞赛 山东赛区二等奖<img
+                                                        src="./img/duizhang.png"
+                                                        style="width: 80px; display: flex; align-items: center;" /><img
+                                                        src="./img/shengji.png"
+                                                        style="width: 80px; display: flex; align-items: center;" />
+                                                </li>
+                                                <li>2021-2022学年“优秀学生”荣誉称号</li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="year">
+                                        <h3>22.12</h3>
+                                        <section>
+                                            <ul>
+                                                <li>2022年度永旺奖学金</li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="year">
+                                        <h3>23.04</h3>
+                                        <section>
+                                            <ul>
+                                                <li>中国海洋大学“优秀共青团干部”荣誉称号</li>
+                                                <li style="color: black;">第十四届蓝桥杯全国软件和信息技术专业人才大赛山东赛区C/C++程序设计大学A组二等奖<img
+                                                        src="./img/shengji.png"
+                                                        style="width: 80px; display: flex; align-items: center;" />
+                                                </li>
+                                                <li>中国海洋大学第二届“融发君亭杯·能言慧辩”答辩大赛二等奖</li>
+                                            </ul>
+                                        </section>
+
+                                    </section>
+                                    <section class="year">
+                                        <h3>23.05</h3>
+                                        <section>
+                                            <ul>
+                                                <li style="color: black;">Mathematical Contest In Modeling® Honorable
+                                                    Mention<img src="./img/duizhang.png"
+                                                        style="width: 80px; display: flex; align-items: center;" /></li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="year">
+                                        <h3>23.06</h3>
+                                        <section>
+                                            <ul>
+                                                <li style="color: black;">第13届MathorCup高校数学建模挑战赛 本科生组一等奖<img
+                                                        src="./img/guojiaji.png"
+                                                        style="width: 80px; display: flex; align-items: center;" /></li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="year">
+                                        <h3>23.11</h3>
+                                        <section>
+                                            <ul>
+                                                <li style="color: black;">2023年高教社杯全国大学生数学建模竞赛 本科组二等奖<img
+                                                        src="./img/duizhang.png"
+                                                        style="width: 80px; display: flex; align-items: center;" />
+                                                    <img src="./img/guojiaji.png"
+                                                        style="width: 80px; display: flex; align-items: center;" />
+                                                </li>
+                                                <li>2022-2023学年 校一等奖学金</li>
+                                                <li>2022-2023学年 优秀学生干部</li>
+                                                <li>第十届鲁信奖学金</li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="xiangmujingli"
+                style="height: 64px; width: 100%; background-color: #9ab1ab; display: flex; align-items: center; justify-content: center; font-size: x-large; font-weight: 600;">
+                项目经历
+            </div>
+            <div style="height: 500px; width: 100%; background-color: #C4FCF0; font-size: larger;">
+                <div class="cardBox">
+                    <div class="headerBox" style="background-color: #4caf50;">
+                        <p>
+                            在线SAR图像变换检测平台
+                        </p>
+                    </div>
+                    <div class="bodyBox">
+                        <p>导师：高峰</p>
+                        <p>导师信息：中国海洋大学副教授</p>
+                        <p>项目收获：
+                            <ul>
+                                <li style="text-align: left;">遥感领域基础知识学习</li>
+                                <li style="text-align: left;">Figma UI设计</li>
+                                <li style="text-align: left;">前端页面开发（图片上传、结果生成进度条、生成结果导出、小组成员介绍）</li>
+                            </ul>
+                        </p>
+                        
+                    </div>
+                </div>
+    
+                <div class="cardBox">
+                    <div class="headerBox" style="background-color: #5BC0DE;">
+                        <p>基于WebRTC的实时通讯系统研究及应用</p>
+                    </div>
+                    <div class="bodyBox">
+                        <p>导师：唐瑞春</p>
+                        <p>导师信息：中国海洋大学教授</p>
+                        <p>项目收获：
+                            <ul>
+                                <li style="text-align: left;">针对三点水公司的要求进行前端开发</li>
+                                <li style="text-align: left;">两周一次线上会议沟通进展</li>
+                                <li style="text-align: left;">实现发送消息聊天、音视频通话模块构建、按钮动态效果</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- <div class="cardBox">
+                    <div class="headerBox" style="background-color: #5BC0DE;">
+                        <p>项目名称三</p>
+                    </div>
+                    <div class="bodyBox">
+                        <p>项目经理：朱焕宏</p>
+                        <p>项目主管：朱焕宏</p>
+                        <p>项目状态：
+                            <a href="javascript:void(0)" class="label label-info" style="border-radius: .25em;">初始化</a>
+                        </p>
+                        <p>异常状态：<span style="color:green">无异常</span></p>
+                        <p>加工量：0</p>
+                    </div>
+                </div> -->
+            </div>
+            <div id="lianxifangshi"
+                style="height: 64px; width: 100%; background-color: #9ab1ab; display: flex; align-items: center; justify-content: center; font-size: x-large; font-weight: 600;">
+                联系方式
+            </div>
+            <div style="height: 320px; width: 100%; background-color: #f8f9fa; font-size: x-large; padding-left: 10%; padding-top: 4%;">
+                （单击邮箱即可复制到剪贴板）
+                <p id="qqcopy"><a href="#" title="QQ邮箱">QQ邮箱：1146717850@qq.com</a></p>
+                <p id="ouccopy"><a href="#" title="中国海洋大学邮箱">中国海洋大学邮箱：hanxiang@stu.ouc.edu.cn</a></p>
+                <p id="gmailcopy"><a href="#" title="谷歌邮箱">谷歌邮箱：hx3995@gmail.com</a></p>
+            </div>
+            <!--留了一个模板，方便以后拓展-->
+            <!-- <div
+                style="height: 64px; width: 100%; background-color: #9ab1ab; display: flex; align-items: center; justify-content: center; font-size: x-large; font-weight: 600;">
+                123
+            </div>
+
+            <div style="height: 500px; width: 100%; background-color: #C4FCF0;"></div> -->
+        </div>
     </div>
+
+    <script async src="https://btcwidget.com/btcwidgetsrc.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4L0GELWRT2');
+
+    // copyButton
+    document.getElementById('qqcopy').addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText('1146717850@qq.com');
+            alert('邮箱(1146717850@qq.com)已成功复制到剪贴板');
+        } catch (err) {
+            alert('复制失败');
+        }
+    })
+
+    document.getElementById('ouccopy').addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText('hanxiang@stu.ouc.edu.cn');
+            alert('邮箱(hanxiang@stu.ouc.edu.cn)已成功复制到剪贴板');
+        } catch (err) {
+            alert('复制失败');
+        }
+    })
+
+    document.getElementById('gmailcopy').addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText('hx3995@gmail.com');
+            alert('邮箱(hx3995@gmail.com)已成功复制到剪贴板');
+        } catch (err) {
+            alert('复制失败');
+        }
+    })
+    </script>
 </body>
 
 </html>

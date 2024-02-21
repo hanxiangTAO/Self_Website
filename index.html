@@ -14,7 +14,7 @@
     <meta name="description" content="Dmego Home">
     <meta name="keywords" content="Dmego,Homepage">
     <meta name="author" content="Dmego">
-    <title>个人主页|hanxiangTAO</title>
+    <title>个人主页 | hanxiangTAO</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/onlinewebfonts.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/vno.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css">
@@ -44,7 +44,7 @@
                                     </h2>
                                     <p>
 
-                                        2023 · 热爱
+                                        2024 · 追梦
 
                                     </p>
                                 </div>
@@ -85,9 +85,9 @@
                             <nav class="cover-navigation navigation--social">
                                 <ul class="navigation">
                                     <li class="navigation__item">
-                                        <a href="https://github.com/hanxiangTAO" title="github" target="_blank">
+                                        <a href="https://github.com/hanxiangTAO" title="GitHub" target="_blank">
                                             <i class='social iconfont icon-github'></i>
-                                            <span class="label">github</span>
+                                            <span class="label">GitHub</span>
                                         </a>
                                     </li>
                                     <!-- <li class="navigation__item">
@@ -98,14 +98,14 @@
                                     </li> -->
 
                                     <li class="navigation__item">
-                                        <a href="https://www.zhihu.com/people/peter-80-95-42" title="zhihu"
+                                        <a href="https://www.zhihu.com/people/peter-80-95-42" title="知乎"
                                             target="_blank">
                                             <i class='social iconfont icon-zhihu'></i>
-                                            <span class="label">zhihu</span>
+                                            <span class="label">知乎</span>
                                         </a>
                                     </li>
-                                    <li class="navigation__item">
-                                        <a href="1146717850@qq.com" title="email">
+                                    <li class="navigation__item" id="copyButton">
+                                        <a href="#" title="email">
                                             <i class='social iconfont icon-email'></i>
                                             <span class="label">email</span>
                                         </a>
@@ -117,15 +117,6 @@
                 </div>
             </div>
             <div class="panel-cover--overlay cover-slate"></div>
-        </div>
-        <div class="remark iUp">
-            <p class="power">Powered By
-                <a href="/" target="_blank"> JsonBird </a> And
-                <a href="/" target="_blank"> Hitokoto </a>
-            </p>
-
-            <p class="power">; Designed By Peter
-            </p>
         </div>
     </header>
     <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
@@ -142,4 +133,14 @@
     gtag('js', new Date());
 
     gtag('config', 'G-4L0GELWRT2');
+
+    // copyButton
+    document.getElementById('copyButton').addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText('1146717850@qq.com');
+            alert('邮箱(1146717850@qq.com)已成功复制到剪贴板');
+        } catch (err) {
+            alert('复制失败');
+        }
+    })
 </script>
